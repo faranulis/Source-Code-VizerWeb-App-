@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_tipspc"
+            android:icon="@drawable/ic_computer"
+            android:title="Tips Artikel PC" />
+        <item
+            android:id="@+id/nav_duniainet"
+            android:icon="@drawable/ic_rss"
+            android:title="Dunia Internet" />
+    </group>
+
+    <item android:title="Aplikasi Dan Games">
+        <menu>
+            <item
+                android:id="@+id/nav_app"
+                android:icon="@drawable/ic_android"
+                android:title="Aplikasi" />
+            <item
+                android:id="@+id/nav_games"
+                android:icon="@drawable/ic_games"
+                android:title="Games" />
+        </menu>
+    </item>
+    <item android:title="Tips Artikel Android">
+        <menu>
+            <item
+                android:id="@+id/nav_trickandroid"
+                android:icon="@drawable/ic_touch"
+                android:title="Tutorial Android" />
+            <item
+                android:id="@+id/nav_artikelandroid"
+                android:icon="@drawable/ic_library"
+                android:title="Artikel Android" />
+        </menu>
+    </item>
+    <item android:title="Gadget">
+        <menu>
+            <item
+                android:id="@+id/nav_kamera"
+                android:icon="@drawable/ic_menu_camera"
+                android:title="Kamera" />
+            <item
+                android:id="@+id/nav_VR"
+                android:icon="@drawable/ic_vr"
+                android:title="Virtual Reality" />
+            <item
+                android:id="@+id/smartwatch"
+                android:icon="@drawable/ic_watch"
+                android:title="Smartwatch" />
+            <item
+                android:id="@+id/nav_apple"
+                android:icon="@drawable/ic_iphone"
+                android:title="Apple" />
+            <item android:title="Apple">
+
+                <item
+                    android:title="_____________________"/>
+
+                <item
+                    android:id="@+id/nav_Infinix"
+                    android:icon="@drawable/ic_smartphone"
+                    android:title="Infinix" />
+                <item
+                    android:id="@+id/nav_smartfren"
+                    android:icon="@drawable/ic_smartphone"
+                    android:title="Smartfren" />
+                <item
+                    android:id="@+id/nav_xiaomi"
+                    android:icon="@drawable/ic_smartphone"
+                    android:title="Xiaomi" />
+                <item
+                    android:id="@+id/nav_asus"
+                    android:icon="@drawable/ic_smartphone"
+                    android:title="Asus" />
+                <item
+                    android:id="@+id/nav_nokia"
+                    android:icon="@drawable/ic_smartphone"
+                    android:title="Nokia" />
+                <item
+                    android:id="@+id/nav_samsung"
+                    android:icon="@drawable/ic_smartphone"
+                    android:title="Send" />
+            </item>
+        </menu>
+    </item>
+
+</menu>

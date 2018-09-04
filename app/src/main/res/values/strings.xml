@@ -1,0 +1,287 @@
+<resources>
+    <string name="app_name">VizerWeb</string>
+    <string name="weblink">http://www.vizerweb.com/</string>
+    <string name="banner_ad_unit_id">ca-app-pub-4625381772326882~6996494638</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="title_activity_settings">Settings</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Explorer</string>
+    <string name="title_notifications">Popular</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact
+        based on your message history
+    </string>
+
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">John Smith</string>
+
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string-array name="list_preference_entries">
+        <item>Entry 1</item>
+        <item>Entry 2</item>
+        <item>Entry 3</item>
+    </string-array>
+
+    <string-array name="list_preference_entry_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="multi_select_list_preference_default_value" />
+
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">Notifications</string>
+
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="pref_title_vibrate">Vibrate</string>
+
+
+    <string-array name="array">
+        <item>Afganistan</item>
+        <item>Afrika Selatan</item>
+        <item>Afrika Tengah</item>
+        <item>Albania</item>
+        <item>Aljazair</item>
+        <item>Amerika Serikat</item>
+        <item>Andorra</item>
+        <item>Angola</item>
+        <item>Antigua</item>
+        <item>Arab Saudi</item>
+        <item>Argentina</item>
+        <item>Armenia</item>
+        <item>Australia</item>
+        <item>Austria</item>
+        <item>Azerbaijan</item>
+        <item>Bahama</item>
+        <item>Bahrain</item>
+        <item>Bangladesh</item>
+        <item>Barbados</item>
+        <item>Belanda</item>
+        <item>Belarus</item>
+        <item>Belgia</item>
+        <item>Belize</item>
+        <item>Benin</item>
+        <item>Bhutan</item>
+        <item>Bolivia</item>
+        <item>Bosnia</item>
+        <item>Botswana</item>
+        <item>Brasil</item>
+        <item>Britania Raya</item>
+        <item>Brunei Darussalam</item>
+        <item>Bulgaria</item>
+        <item>Burkina Faso</item>
+        <item>Burundi</item>
+        <item>Ceko</item>
+        <item>Chad</item>
+        <item>Chili</item>
+        <item>China</item>
+        <item>Denmark</item>
+        <item>Djibouti</item>
+        <item>Dominika</item>
+        <item>Ekuador</item>
+        <item>El Salvador</item>
+        <item>Eritrea</item>
+        <item>Estonia</item>
+        <item>Ethiopia</item>
+        <item>Fiji</item>
+        <item>Filipina</item>
+        <item>Finlandia</item>
+        <item>Gabon</item>
+        <item>Gabon</item>
+        <item>Gambia</item>
+        <item>Georgia</item>
+        <item>Ghana</item>
+        <item>Grenada</item>
+        <item>Guatemala</item>
+        <item>Guinea</item>
+        <item>Guinea Bissau</item>
+        <item>Guinea</item>
+        <item>Guyana</item>
+        <item>Haiti</item>
+        <item>Honduras</item>
+        <item>Hongaria</item>
+        <item>India</item>
+        <item>Indonesia</item>
+        <item>Irak</item>
+        <item>Iran</item>
+        <item>Iran</item>
+        <item>Irlandia</item>
+        <item>Islandia</item>
+        <item>Israel</item>
+        <item>Italia</item>
+        <item>Jamaika</item>
+        <item>Jepang</item>
+        <item>Jerman</item>
+        <item>Kamboja</item>
+        <item>Kamerun</item>
+        <item>Kanada</item>
+        <item>Kazakhstan</item>
+        <item>Kenya</item>
+        <item>Kirgizstan</item>
+        <item>Kiribati</item>
+        <item>Kolombia</item>
+        <item>Komoro</item>
+        <item>Republik Kongo</item>
+        <item>Korea Selatan</item>
+        <item>Korea Utara</item>
+        <item>Kosta Rika San Yose</item>
+        <item>Kroasia</item>
+        <item>Kuba</item>
+        <item>Kuwait</item>
+        <item>Laos</item>
+        <item>Latvia</item>
+        <item>Lebanon</item>
+        <item>Lesotho</item>
+        <item>Liberia</item>
+        <item>Libya</item>
+        <item>Liechtenstein</item>
+        <item>Lituania</item>
+        <item>Luksemburg</item>
+        <item>Madagaskar</item>
+        <item>Makedonia</item>
+        <item>Maladewa</item>
+        <item>Malawi</item>
+        <item>Malaysia</item>
+        <item>Mali</item>
+        <item>Malta</item>
+        <item>Maroko</item>
+        <item>Marshall</item>
+        <item>Marshall</item>
+        <item>Mauritania</item>
+        <item>Mauritius</item>
+        <item>Mesir</item>
+        <item>Mikronesia</item>
+        <item>Moldova</item>
+        <item>Monako</item>
+        <item>Mongolia</item>
+        <item>Montenegro</item>
+        <item>Mozambik</item>
+        <item>Myanmar</item>
+        <item>Namibia</item>
+        <item>Nauru</item>
+        <item>Nepal</item>
+        <item>Niger</item>
+        <item>Nigeria</item>
+        <item>Nikaragua</item>
+        <item>Norwegia</item>
+        <item>Oman</item>
+        <item>Pakistan</item>
+        <item>Palau</item>
+        <item>Panama</item>
+        <item>Pantai Gading</item>
+        <item>Papua Nugini</item>
+        <item>Paraguay</item>
+        <item>Perancis</item>
+        <item>Peru</item>
+        <item>Polandia</item>
+        <item>Portugal</item>
+        <item>Qatar</item>
+        <item>Republik Demokratik Kongo</item>
+        <item>Republik Dominika</item>
+        <item>Rumania</item>
+        <item>Rusia</item>
+        <item>Rwanda</item>
+        <item>Saint Kitts and Nevis</item>
+        <item>Saint Lucia</item>
+        <item>Saint Vincent and the Grenadines</item>
+        <item>Samoa</item>
+        <item>San Marino</item>
+        <item>ao Tome and Principe</item>
+        <item>Selandia Baru</item>
+        <item>Senegal</item>
+        <item>Serbia</item>
+        <item>Seychelles</item>
+        <item>Sierra Leone</item>
+        <item>Singapura</item>
+        <item>Siprus</item>
+        <item>Slovenia</item>
+        <item>Slowakia</item>
+        <item>Solomon</item>
+        <item>Somalia</item>
+        <item>Spanyol</item>
+        <item>Sri Lanka</item>
+        <item>Sudan</item>
+        <item>Sudan Selatan</item>
+        <item>Suriah</item>
+        <item>Suriname</item>
+        <item>Swaziland</item>
+        <item>Swedia</item>
+        <item>Swiss</item>
+        <item>Tajikistan</item>
+        <item>Tanjung Verde</item>
+        <item>Tanzania</item>
+        <item>Thailand</item>
+        <item>Timor Leste</item>
+        <item>Togo</item>
+        <item>Tonga</item>
+        <item>Trinidad and Tobago</item>
+        <item>Tunisia</item>
+        <item>Turki</item>
+        <item>Turkmenistan</item>
+        <item>Tuvalu</item>
+        <item>Uganda</item>
+        <item>Ukraina</item>
+        <item>Uni Emirat Arab</item>
+        <item>Uruguay</item>
+        <item>Uzbekistan</item>
+        <item>Vanuatu</item>
+        <item>Venezuela</item>
+        <item>Vietnam</item>
+        <item>Yaman</item>
+        <item>Yordania</item>
+        <item>Yunani</item>
+        <item>Zambia</item>
+        <item>Zimbabwe</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

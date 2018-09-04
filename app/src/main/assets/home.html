@@ -1,0 +1,107 @@
+<style scoped='' type='text/css'>
+body {
+    margin: 0;
+}
+#recentpostnav{border:1px solid #585858;width:100%;margin:0 auto}
+#recentpostsae{margin:0}
+.recentpostel {
+    background: #fff;
+    border: 1px solid #ddd;
+        width: 100%;
+            cursor: pointer;
+        padding: 0;    text-align: left;
+}
+.recentpostel img {
+    float: left;
+    margin: 7;
+    margin-right: 8px;
+    width: 100px;
+    border: 1px solid #ddd;
+}
+.recentpostel h6, .recentpostel h6 a {
+    font-size: 13px!important;
+    margin: 12;
+}
+.recentpostel p{font-size:12px;text-align:left;color:#555;line-height:normal;margin:5px 0}
+#recentpostload {
+    background: url(https://cdn.dribbble.com/users/172519/screenshots/3520576/dribbble-spinner-800x600.gif) 50% 50% no-repeat #f9f9f9;
+    height: 100%;
+    background-size: 120px;
+}
+#recentpostnavfeed{border:1px solid #ddd;color:#bbb;font-family:Verdana;font-size:12px;text-align:center;margin:0}
+#recentpostnavfeed:hover{background-color:#fefefe}
+#recentpostnavfeed a{    text-decoration: none;color:#141414!important;font-family:Tahoma!important;font-size:12px!important;font-weight:400!important;display:block;padding:5px 10px}
+#recentpostnavfeed span{padding:5px 10px}
+#recentpostnavfeed .next{float:right}
+#recentpostnavfeed .previous{float:left}
+#recentpostnavfeed .home {
+    margin: 0 auto;
+    width: fit-content;
+}
+#recentpostnavfeed a:hover,#recentpostnavfeed span.noactived{color:transparant!important}
+</style>
+<script type='text/javascript'>
+//<![CDATA[
+var numfeed = 10;
+var startfeed = 0;
+var urlblog = "http://www.vizerweb.com/";
+var charac = 40;
+var urlprevious, urlnext;
+
+function vizfeed(e, t) {
+    for (var n = e.split("<"), r = 0; r < n.length; r++) - 1 != n[r].indexOf(">") && (n[r] = n[r].substring(n[r].indexOf(">") + 1, n[r].length));
+    return n = n.join(""), n = n.substring(0, t - 1)
+}
+
+function showrecentpostsae(e) {
+    var t, n, r, a, i, s = "";
+    urlprevious = "", urlnext = "";
+    for (var l = 0; l < e.feed.link.length; l++) "previous" == e.feed.link[l].rel && (urlprevious = e.feed.link[l].href), "next" == e.feed.link[l].rel && (urlnext = e.feed.link[l].href);
+    for (var d = 0; d < numfeed && d != e.feed.entry.length; d++) {
+        t = e.feed.entry[d], n = t.title.$t;
+        for (var l = 0; l < t.link.length; l++)
+            if ("alternate" == t.link[l].rel) {
+                r = t.link[l].href;
+                break
+            }
+        i = "content" in t ? t.content.$t : "summary" in t ? t.summary.$t : "", a = "media$thumbnail" in t ? t.media$thumbnail.url : "http://3.bp.blogspot.com/-BHuXHny1kOk/VXrkSyxKCjI/AAAAAAAACas/pZLJAEUDtds/s1600/no-image.png",
+         s += "<a href='" + r + "' target='_blank'>",
+         s += "<button class='recentpostel'>",
+         s += "<img src='" + a + "' />",
+         s += "<h6>" + n + "</h6>",
+         s += "<p>" + vizfeed(i, charac) + "...</p>",
+         s += "</button>",
+         s += "</a>"
+    }
+    document.getElementById("recentpostsae").innerHTML = s, s = "",
+    s += urlprevious ? "<a href='javascript:navigasifeed(-1);' class='previous'>Previous</a>" : "<span class='noactived previous'>Previous</span>",
+    s += urlnext ? "<a href='javascript:navigasifeed(1);' class='next'>Next</a>" : "<span class='noactived next'>Next</span>",
+    s += "<a href='javascript:navigasifeed(0);' class='home'>Home</a>", document.getElementById("recentpostnavfeed").innerHTML = s
+}
+
+function navigasifeed(e) {
+    var t, n; - 1 == e ? (t = urlprevious.indexOf("?"), n = urlprevious.substring(t)) : 1 == e ? (t = urlnext.indexOf("?"), n = urlnext.substring(t)) : n = "?start-index=1&max-results=" + numfeed + "&orderby=published&alt=json-in-script", n += "&callback=showrecentpostsae", incluirscript(n)
+}
+
+function incluirscript(e) {
+    1 == startfeed && removerscript(), document.getElementById("recentpostsae").innerHTML = "<div id='recentpostload'></div>", document.getElementById("recentpostnavfeed").innerHTML = "";
+    var t = urlblog + "/feeds/posts/default" + e,
+        n = document.createElement("script");
+    n.setAttribute("type", "text/javascript"), n.setAttribute("src", t), n.setAttribute("id", "vizlabel"), document.getElementsByTagName("head")[0].appendChild(n), startfeed = 1
+}
+
+function removerscript() {
+    var e = document.getElementById("vizlabel"),
+        t = e.parentNode;
+    t.removeChild(e)
+}
+
+
+onload = function() {
+    navigasifeed(0)
+};
+//]]>
+</script>
+
+<div id="recentpostsae"></div>
+<div id="recentpostnavfeed"></div>

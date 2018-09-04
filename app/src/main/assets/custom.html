@@ -1,0 +1,84 @@
+<style>
+img.recent_thumb {
+    float: left;
+    margin: 7;
+    margin-right: 8px;
+    width: 100px;
+    border: 1px solid #ddd;
+}
+h6 {
+    font-size: 13px!important;
+    margin: 12;
+}
+i {
+    font-size: 12px;
+    text-align: left;
+    color: #555;
+    line-height: normal;
+    margin: 5px 0;
+}
+ul.recent_posts_with_thumbs {
+    padding: 0;
+}
+button.clearfix {
+    background: #fff;
+    border: 1px solid #ddd;
+    width: 100%;
+    cursor: pointer;
+    padding: 0;
+    text-align: left;
+}
+</style>
+<script>
+function showrecentpostswiththumbs(json) {document.write('<ul class="recent_posts_with_thumbs">'); for (var i = 0; i < numposts; i++) {var entry = json.feed.entry[i];var posttitle = entry.title.$t;var posturl;if (i == json.feed.entry.length) break;for (var k = 0; k < entry.link.length;k++){
+if(entry.link[k].rel=='replies'&&entry.link[k].type=='text/html'){var commenttext=entry.link[k].title;var commenturl=entry.link[k].href;}
+if (entry.link[k].rel == 'alternate') {posturl = entry.link[k].href;break;}}var thumburl;try {thumburl=entry.media$thumbnail.url;}catch (error)
+{
+s=entry.content.$t;a=s.indexOf("<img");b=s.indexOf("src=\"",a);c=s.indexOf("\"",b+5);d=s.substr(b+5,c-b-5);if((a!=-1)&&(b!=-1)&&(c!=-1)&&(d!="")){
+thumburl=d;} else thumburl='http://lh4.ggpht.com/_IjrRiI_bVb0/TOCYn1fMjII/AAAAAAAAF24/5Fvv-HJqh74/loading-2.gif';
+}
+document.write('<a href="'+posturl+'" target ="_blank">');
+document.write('<button class="clearfix">');
+if(showpostthumbnails==true)
+document.write('<img class="recent_thumb" src="'+thumburl+'"/>');
+document.write('<h6>'+posttitle+'</h6>');
+
+if ("content" in entry) {
+var postcontent = entry.content.$t;}
+else
+if ("summary" in entry) {
+var postcontent = entry.summary.$t;}
+else var postcontent = "";
+var re = /<\S[^>]*>/g;
+postcontent = postcontent.replace(re, "");
+if (showpostsummary == true) {
+if (postcontent.length < numchars) {
+document.write('<i>');
+document.write(postcontent);
+document.write('</i>');}
+else {
+document.write('<i>');
+postcontent = postcontent.substring(0, numchars);
+var quoteEnd = postcontent.lastIndexOf(" ");
+postcontent = postcontent.substring(0,quoteEnd);
+document.write(postcontent + '...');
+document.write('</i>');}
+}
+
+var towrite='';var flag=0;
+document.write('<br><strong>');
+
+
+
+
+
+document.write(towrite);
+document.write('</strong></button></a>');
+}document.write('</a></ul>');
+
+}
+</script>
+<script>
+var numposts = 6;var showpostthumbnails = true;var displaymore = false;var displayseparator = true;var showcommentnum = false;var showpostdate = false;var showpostsummary = true;var numchars = 60;
+</script><script src="http://www.vizerweb.com/feeds/posts/default/-/Games?orderby=published&alt=json-in-script&callback=showrecentpostswiththumbs">
+</script><div class="clear"/></div>

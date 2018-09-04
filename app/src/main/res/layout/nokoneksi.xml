@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:background="#f7f7f7"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/nokoneksi">
+
+
+        </ImageView>
+
+                <!--<Button-->
+                <!--android:id="@+id/koneklanjut"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="1"-->
+                <!--android:background="@drawable/btn_transparant"-->
+                <!--android:text="Lanjutkan"-->
+                <!--android:textColor="#fff" />-->
+
+                <!--<Button-->
+                <!--android:id="@+id/konekkeluar"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="1"-->
+                <!--android:background="@drawable/btn_transparant"-->
+                <!--android:text="Keluar"-->
+                <!--android:textColor="#fff" />-->
+            </LinearLayout>
+
+
+</LinearLayout>

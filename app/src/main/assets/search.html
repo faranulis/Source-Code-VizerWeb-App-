@@ -1,0 +1,89 @@
+<html>
+<head>
+    <title>CSE VizerWeb</title>
+    <meta name="viewport"
+          content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"/>
+    <style>
+div#Header {
+    background: #3fb2ea;
+    position: fixed;
+    width: 94%;
+    display: block;
+        box-shadow: -1px 0px 20px black;
+    color: #fff;
+    padding: 12;
+}
+input.search-form.user-invalid.valueMissing {
+width: 86%;
+    padding: 6;
+
+        margin-left: 35;
+    font-family: sans-serif;
+    border-radius: 8px;
+    border: 0;
+}
+form {
+    margin: 0;
+}
+iframe {
+    width: 100%;
+    border: 0;
+    margin-top: 50;
+    height: 100%;
+}
+body {
+    margin: 0;
+}
+.gs-bidi-start-align.gs-visibleUrl.gs-visibleUrl-long {
+    display: none;
+}
+.gs-title {
+    font-weight: 700;
+}
+.gsc-cursor-box.gs-bidi-start-align {
+    padding: 12;
+    padding-left: 20%;
+}
+#submitnya{
+display:none
+}
+
+    </style>
+</head>
+<body>
+<div id="Header">
+    <form action="file:///android_asset/search.html" method="get" novalidate=""
+          class="i-amphtml-form user-invalid" >
+        <input name="cx" type="hidden" value="partner-pub-4625381772326882:3844436892" >
+        <input name="cof" type="hidden" value="FORID:10">
+        <input name="ie" type="hidden" value="UTF-8">
+        <input autocomplete="off" class="search-form user-invalid valueMissing" name="q"
+               placeholder="Search..." required="required" type="text">
+        <input name="as_sitesearch" type="hidden" value="www.vizerweb.com">
+        <!--manipulasi submit(enter) / Button dan display none agar tidak terlihat-->
+        <input id="submitnya" type="submit" value="" onClick="showAndroidToast('Searching...')" />
+    </form>
+</div>
+
+<script>
+  (function() {
+    var cx = 'partner-pub-4625381772326882:3844436892';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+
+</script>
+<gcse:searchresults-only></gcse:searchresults-only>
+
+<!--cript untuk toast dan masuk ke java SearchBox.class-->
+<script type="text/javascript">
+    function showAndroidToast(toast) {
+        Android.showToast(toast);
+    }
+</script>
+</body>
+</html>
